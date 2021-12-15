@@ -1,0 +1,119 @@
+$light-text: #FFF1EC;
+$dark-text: #2A3692;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #EF6A6B;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    // max-width:100%;
+    scroll-snap-type: y mandatory;
+
+    .nav {
+        position: fixed;
+        height: 3em;
+        top: 1.5em;
+        right: 5rem;
+        // width: 100%;
+    }
+
+    .icon {
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        bottom: 5em;
+    }
+
+    #mouse-icon {
+        position:fixed;
+        text-align: center;
+        margin: auto;
+        width: 1.5em;
+        stroke: $light-text;
+    }
+
+    section {
+        display: flex;
+        scroll-snap-align: start;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        min-height: 100%;
+        padding: 5em;
+        // width: 100%;
+    
+        &:nth-of-type(1) {
+            background-color: #EF6A6B;
+        }
+        &:nth-of-type(2) {
+            background-color: #FFD364;
+        }
+        &:nth-of-type(3) {
+            background-color: #24305E;
+        }
+        &:nth-of-type(4) {
+            background-color: #FFB0B0;
+        }
+
+        .h1 {
+            margin-bottom: 1em;
+            text-align: center;
+            font-family: 'Poppins';
+            font-weight: 900;
+            font-size: 5em;
+            color: #FFF1EC;
+            letter-spacing: 1px;
+            height: 1.5em;
+        }
+
+        .content-text {
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600px;
+            padding: 3em;
+            font-size: 2.5rem;
+            color: #FFF1EC;
+            &.dark {
+                color: #2A3692;
+            }
+        }
+
+        .button-wrapper {
+           display: flex;
+           justify-content: center;
+           align-content: center;
+           margin-top: 1em;
+           height: 2em;
+
+           .btn {
+               font-family: 'Poppins', sans-serif;
+               background-color: #24305E;
+               font-weight: 300;
+               font-size: 0.5em;
+               text-align: center;
+               height: 3em;
+               padding: 0 1em;
+               border-radius: 30px;
+               border-style: hidden;
+               color: $light-text;
+            //    width: 5em;
+           }
+        }
+    }
+}
+
+// @mixin 
+
+// .abstract-section {
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+//     height: 100%;
+//     width: 100%;
+// }
+
+
